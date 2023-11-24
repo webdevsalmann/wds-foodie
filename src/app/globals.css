@@ -1,27 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+    scroll-behavior: smooth
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@layer components {
+    .max-container {
+        @apply mx-auto max-w-[1440px];
+    }
+
+    /* ===========================================================================
+  DEFAULT BEHAVIOUR
+  =========================================================================== */
+    body {
+        @apply relative max-container set-bg font-poppins text;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-poppins font-black;
+    }
+
+    h1 {
+        @apply text-4xl;
+    }
+
+    h2 {
+        @apply text-3xl;
+    }
+
+    h3 {
+        @apply text-2xl;
+    }
+
+    h4 {
+        @apply text-xl;
+    }
+
+    h5 {
+        @apply text-lg;
+    }
+
+    h6 {
+        @apply text-base;
+    }
+
+    p {
+        @apply text-base text-balance;
+    }
+
+    a {
+        @apply text-base text-balance-hover;
+    }
+
+    svg,
+    img {
+        @apply w-full h-full object-cover;
+    }
+
+    textarea,
+    input {
+        @apply text-base py-[2px] px-2 accent-focus outline-focus text-slate-800 rounded-sm;
+    }
+
+    button,
+    a,
+    Link {
+        @apply focus:outline-focus border-none;
+    }
+
+    a {
+        @apply text-blue-500;
+    }
+
+
+
+    /* ===========================================================================
+  COLOR CLASSES
+  =========================================================================== */
+    .set-bg {
+        @apply bg-zinc-900;
+    }
+
+    .set-bg-light {
+        @apply bg-zinc-800;
+    }
+
+    .set-bg-dark {
+        @apply bg-zinc-950;
+    }
+
+    .set-bg-p {
+        @apply bg-red-600;
+    }
+
+    .set-grad-p {
+        @apply bg-gradient-to-br from-red-500 to-red-600 hover:to-red-700;
+    }
+
+    .set-hover {
+        @apply hover:bg-zinc-700;
+    }
+
+    .set-hover-light {
+        @apply hover:bg-zinc-600;
+    }
+
+    .text-link {
+        @apply text-blue-400 hover:underline hover:text-blue-400;
+    }
+
+    .text {
+        @apply text-neutral-100;
+    }
+
+    .text-balance {
+        @apply text-neutral-400;
+    }
+
+    .clr-p {
+        @apply text-red-600 hover:text-red-600;
+    }
+
+    .bg-clr-p {
+        @apply px-2 rounded bg-zinc-800 hover:bg-zinc-800 text-red-600 hover:text-red-600;
+    }
+
+    .text-hover-inverse {
+        @apply text-neutral-100 hover:text-neutral-900;
+    }
+
+    .text-balance-hover {
+        @apply text-zinc-400 hover:text-zinc-100;
+    }
+
+    .set-text-focus {
+        @apply text-focus hover:text-focus-light focus:text-focus-light;
+    }
+
+
+    /* ===========================================================================
+      COMMON CLASSES
+      =========================================================================== */
+
+    .section-padding {
+        @apply py-8 px-4 md:px-12 md:py-16 lg:px-16 lg:py-24;
+    }
+
+    .section-margin {
+        @apply my-12 mx-4 md:mx-12 md:my-16 lg:mx-16 lg:my24;
+    }
+
+    .section-heading {
+        @apply mb-6 w-full mx-auto;
+    }
+
+    .section-heading h2 {
+        @apply mb-2 mx-auto w-full md:w-2/4 text-left md:text-center;
+    }
+
+    .section-heading p {
+        @apply mx-auto w-full md:w-3/4 text-left md:text-center;
+    }
+
+    .manage-text {
+        @apply break-words break-all hyphens-auto;
+    }
+
+    .card-container {
+        @apply grid gap-4 grid-cols-[repeat(auto-fill, _minmax(13rem, _1fr))];
+    }
+
+    .flex-center,
+    .icon-box {
+        @apply flex justify-center items-center;
+    }
+
+    .flex-between {
+        @apply flex justify-between items-center;
+    }
+
+    .set-border-thin {
+        @apply border-solid border-slate-200/20;
+    }
+
+    .set-divide {
+        @apply border-solid border-slate-200/20;
+    }
+
+    /* ===========================================================================
+  BUTTON
+  =========================================================================== */
+    .btn {
+        @apply py-2 px-4 text-base capitalize inline-flex flex-center gap-2 border-transparent font-semibold whitespace-nowrap rounded transition-all focus:outline-2 focus:outline focus:outline-focus focus:outline-offset-0;
+    }
+
+    .btn-p {
+        @apply btn set-grad-p text-neutral-100 hover:text-neutral-100;
+    }
+
+    .btn-solid {
+        @apply btn text set-bg-light hover:bg-zinc-700;
+    }
+
+    .btn-soft {
+        @apply btn text set-bg-light hover:set-bg-dark;
+    }
+
+    .btn-outline {
+        @apply btn text hover:bg-zinc-800 outline outline-offset-[-2px] outline-2 outline-zinc-700 focus:bg-zinc-800 focus:outline-focus;
+    }
+
+    .btn-ghost {
+        @apply btn text hover:bg-zinc-800;
+    }
+
+    .btn-link {
+        @apply btn text-red-500 hover:text-red-300 hover:underline;
+    }
+
+    .btn-ghost-link {
+        @apply btn text-neutral-200 hover:text-red-500 hover:bg-zinc-800 focus:bg-zinc-800;
+    }
+
+    .btn-icon {
+        @apply btn aspect-square p-[2px];
+    }
+
+    .btn-danger {
+        @apply btn bg-danger text-white hover:bg-danger-dark focus:outline-none focus:ring-2 focus:ring-danger focus:ring-offset-2 focus:ring-offset-gray-200;
+    }
+
+    .btn-submit {
+        @apply btn text-neutral-100 bg-blue-600 hover:bg-blue-700;
+    }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+.text-shadow{
+    text-shadow: 0 0 5px #303030;
 }
