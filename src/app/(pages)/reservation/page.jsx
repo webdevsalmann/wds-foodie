@@ -10,7 +10,7 @@ export default function Page() {
       </div>
 
       <div className="my-12 flex gap-8 flex-wrap-reverse">
-        <div className="img-box w-full md:w-1/2" data-aos="fade-right">
+        <div className="img-box w-full md:w-1/2" data-aos="fade-up">
           <Image
             src="/images/all/restaurant.jpg"
             width={1600}
@@ -19,7 +19,7 @@ export default function Page() {
           />
         </div>
 
-        <div className="flex-1 w-full md:w-1/2 set-bg-dark rounded" data-aos="fade-left">
+        <div className="flex-1 w-full md:w-1/2 set-bg-dark rounded" data-aos="fade-up">
           <Form />
         </div>
       </div>

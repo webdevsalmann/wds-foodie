@@ -4,19 +4,19 @@ export default function Form() {
     const inputClass = "px-4 h-8 set-bg text-neutral-200 rounded";
     return (
         <form className='p-4 flex flex-col gap-4'>
-            <div className="flex-between gap-4">
-                <label className='w-1/2 ' htmlFor="rName">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <label className='w-full' htmlFor="rName">
                     <div className='ml-2 mb-1 font-bold text-balance'>Name:</div>
                     <input className={`w-full ${inputClass}`} id='rName' name='rName' type="text" placeholder='Full Name' />
                 </label>
-                <label className='w-1/2 ' htmlFor="rEmail">
+                <label className='w-full' htmlFor="rEmail">
                     <div className='ml-2 mb-1 font-bold text-balance'>Email:</div>
                     <input className={`w-full ${inputClass}`} id='rEmail' name='rEmail' type="text" placeholder='xyz123@mail.com' />
                 </label>
             </div>
 
-            <div className="flex-between gap-4">
-                <label className='w-1/2 ' htmlFor="rNoOfGuests">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <label className='w-full' htmlFor="rNoOfGuests">
                     <div className='ml-2 mb-1 font-bold text-balance'>Number of Guests:</div>
                     <select className={`w-full ${inputClass}`} name="rNoOfGuests" id="rNoOfGuests">
                         <option value="1">1</option>
@@ -28,7 +28,7 @@ export default function Form() {
                         <option value="more than 6">more than 6</option>
                     </select>
                 </label>
-                <label className='w-1/2 ' htmlFor="rTime">
+                <label className='w-full' htmlFor="rTime">
                     <div className='ml-2 mb-1 font-bold text-balance'>Time:</div>
                     <select className={`w-full ${inputClass}`} name="rTime" id="rTime">
                         <option value="06:00 to 06:30 PM">06:00 to 06:30 PM</option>
@@ -46,12 +46,12 @@ export default function Form() {
                 </label>
             </div>
 
-            <div className="flex-between gap-4">
-                <label className='w-1/2 ' htmlFor="rPhoneNumber">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <label className='w-full' htmlFor="rPhoneNumber">
                     <div className='ml-2 mb-1 font-bold text-balance'>Phone Number:</div>
                     <input className={`w-full ${inputClass}`} id='rPhoneNumber' name='rPhoneNumber' type="text" placeholder='+91 9898989898' />
                 </label>
-                <label className='w-1/2 ' htmlFor="rDate">
+                <label className='w-full' htmlFor="rDate">
                     <div className='ml-2 mb-1 font-bold text-balance'>Date:</div>
                     <input className={`w-full ${inputClass}`} id='rDate' name='rDate' type="date" placeholder='xyz123@mail.com' />
                 </label>

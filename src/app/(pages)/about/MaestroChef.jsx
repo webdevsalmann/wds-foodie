@@ -5,7 +5,7 @@ export default function MaestroChef() {
         <section className="section-padding mt-20">
             <div className="flex gap-6 flex-wrap">
 
-                <div className="img-box aspect-square w-full md:w-1/2 max-h-96 flex-center" data-aos="fade-right">
+                <div className="img-box aspect-square w-full md:w-1/2 max-h-96 flex-center" data-aos="fade-up">
                     <Image
                         className="h-full w-fit aspect-[9/16] bg-contain"
                         src="/images/all/chef.jpg"
@@ -14,7 +14,7 @@ export default function MaestroChef() {
                         alt="Picture of the Restaurant"
                     />
                 </div>
-                <div className="flex-1 min-w-[18rem] flex-center flex-col"  data-aos="fade-left">
+                <div className="flex-1 min-w-[18rem] flex-center flex-col"  data-aos="fade-up">
                     <p className="mb-8 font-bold text-lg text-left ">👨‍🍳 Meet Our Maestro: Chef Miguel Doe</p>
 
                     <p className="mb-3">At the heart of Foodie&apos;s culinary magic is our esteemed Chef Miguel Doe. With a culinary journey spanning 8 years, Chef Miguel brings a wealth of experience and creativity to our kitchen.</p>
