@@ -17,7 +17,7 @@ export default function MaestroChef() {
                 <div className="flex-1 min-w-[18rem] flex-center flex-col"  data-aos="fade-left">
                     <p className="mb-8 font-bold text-lg text-left ">👨‍🍳 Meet Our Maestro: Chef Miguel Doe</p>
 
-                    <p className="mb-3">At the heart of Foodie's culinary magic is our esteemed Chef Miguel Doe. With a culinary journey spanning 8 years, Chef Miguel brings a wealth of experience and creativity to our kitchen.</p>
+                    <p className="mb-3">At the heart of Foodie&apos;s culinary magic is our esteemed Chef Miguel Doe. With a culinary journey spanning 8 years, Chef Miguel brings a wealth of experience and creativity to our kitchen.</p>
                     <p className="mb-3">Trained in the art of sea cuisine Chef Miguel has honed the craft of transforming the finest ingredients into culinary masterpieces. His dedication to innovation and attention to detail shine through in every dish that graces your table.</p>
                     <p>Chef Miguel invites you to embark on a gastronomic adventure, where each bite tells a tale of passion, skill, and a commitment to culinary excellence.</p>
                 </div>

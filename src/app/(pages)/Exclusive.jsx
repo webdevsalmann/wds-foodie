@@ -51,7 +51,7 @@ export default function Exclusive() {
         <section className="section-padding pb-0">
             <div className="section-heading">
                 <h2><span className="clr-p">Exclusive Promotion:</span> Weekday Delights</h2>
-                <p>Indulge in the extraordinary with our chef's specially curated dishes for this month. From succulent seafood to decadent desserts, our specials are designed to tantalize your taste buds and elevate your dining experience.</p>
+                <p>Indulge in the extraordinary with our chef&apos;s specially curated dishes for this month. From succulent seafood to decadent desserts, our specials are designed to tantalize your taste buds and elevate your dining experience.</p>
             </div>
 
             <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

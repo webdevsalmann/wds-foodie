@@ -50,7 +50,7 @@ const BannerSlider = ({ images }) => {
 
         // Clear interval on component unmount
         return () => clearInterval(intervalId);
-    }, []);
+    }, [autoSlide]);
 
     return (
         <div className="banner-slider relative w-full h-full overflow-hidden">

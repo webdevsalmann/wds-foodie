@@ -46,8 +46,8 @@ export default function MonthSpecial() {
     return (
         <section className="section-padding pb-0">
             <div className="section-heading">
-                <h2>This <span className="clr-p">Month's Specials:</span>  Unveiling Culinary Delights!</h2>
-                <p>Indulge in the extraordinary with our chef's specially curated dishes for this month. From succulent seafood to decadent desserts, our specials are designed to tantalize your taste buds and elevate your dining experience.</p>
+                <h2>This <span className="clr-p">Month&apos;s Specials:</span>  Unveiling Culinary Delights!</h2>
+                <p>Indulge in the extraordinary with our chef&apos;s specially curated dishes for this month. From succulent seafood to decadent desserts, our specials are designed to tantalize your taste buds and elevate your dining experience.</p>
             </div>
 
             <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

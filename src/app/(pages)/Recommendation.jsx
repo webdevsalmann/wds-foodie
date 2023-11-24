@@ -4,8 +4,8 @@ export default function Recommendation() {
     return (
         <section className="section-padding pb-0">
             <div className="section-heading">
-                <h2><span className="clr-p">Chef's Recommendation: </span>  Seafood Symphony</h2>
-                <p>Join us on weekdays and enjoy exclusive promotions on selected menu items. It's our way of adding a dash of delight to your ordinary days. Because at Foodie, every day is a celebration of good food and great company.</p>
+                <h2><span className="clr-p">Chef&apos;s Recommendation: </span>  Seafood Symphony</h2>
+                <p>Join us on weekdays and enjoy exclusive promotions on selected menu items. It&apos;s our way of adding a dash of delight to your ordinary days. Because at Foodie, every day is a celebration of good food and great company.</p>
             </div>
 
             <div className="mx-auto w-full md:w-3/4 lg:w-1/2"  data-aos="fade-up">
